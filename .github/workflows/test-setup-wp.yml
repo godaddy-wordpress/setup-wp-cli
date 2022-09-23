@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test wp-cli
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup WP-CLI
+        uses: ./
+
+      - name: Expect wp command to be available
+        run: wp --info
