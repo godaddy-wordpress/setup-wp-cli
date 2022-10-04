@@ -8,5 +8,5 @@ Use this in one of your Workflows steps.
 
 ```
 - name: Setup WP-CLI
-  uses: godaddy-wordpress/setup-wp-cli@main
+  uses: godaddy-wordpress/setup-wp-cli@1
 ```
